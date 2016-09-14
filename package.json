@@ -1,0 +1,34 @@
+{
+    "name": "chapel",
+    "displayName": "chapel-vscode",
+    "description": "Chapel Language support for VS Code.",
+    "version": "0.0.1",
+    "publisher": "marcoscleison",
+    "engines": {
+        "vscode": "^1.4.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "chapel",
+            "aliases": ["Chapel", "chapel"],
+            "extensions": [".chpl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "chapel",
+            "scopeName": "source.chapel",
+            "path": "./syntaxes/chapel.tmLanguage"
+        }],
+        "snippets": [
+            {
+                "language": "chapel",
+                "path": "./snippets/snippets.json"
+            }
+           
+        ]
+    }
+
+}

@@ -1,0 +1,30 @@
+{
+	"For Loop": {
+		"prefix": "for",
+		"body": [
+			"for $1 in $2{",
+			"\t$3",
+			"}"
+		],
+		"description": "For Loop",
+		"scope": "source.chapel"
+    },
+	"var1":{
+		"prefix": "var1",
+		"body": [
+			"var $1:$2;"			
+		],
+		"description": "Variable Declaration 1",
+		"scope": "source.chapel"
+
+	},
+	"var2":{
+		"prefix": "var2",
+		"body": [
+			"var $1:$2 = $3;"			
+		],
+		"description": "Variable Declaration 2",
+		"scope": "source.chapel"
+
+	}
+}

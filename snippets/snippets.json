@@ -26,5 +26,185 @@
 		"description": "Variable Declaration 2",
 		"scope": "source.chapel"
 
+	},
+	"const1":{
+		"prefix": "const1",
+		"body": [
+			"const $1:$2 = $3;"			
+		],
+		"description": "Constant Declaration",
+		"scope": "source.chapel"
+
+	},
+	"config1":{
+		"prefix": "config1",
+		"body": [
+			"config $1:$2 = $3;"			
+		],
+		"description": "Command Line Variable Declaration 1",
+		"scope": "source.chapel"
+
+	},
+	"config2":{
+		"prefix": "config2",
+		"body": [
+			"config const $1:$2 = $3;"			
+		],
+		"description": "Command Line Constant Declaration 1",
+		"scope": "source.chapel"
+
+	
 	}
+	,
+	"tupla":{
+		"prefix": "tupla",
+		"body": [
+			"var $1:$2*$3=();"			
+		],
+		"description": "Tupla declaration 1",
+		"scope": "source.chapel"
+
+	}
+	,
+	"if1":{
+		"prefix": "if",
+		"body": [
+			"if ($1) {",	
+			"\t$2",
+			"}"
+
+		],
+		"description": "If statement",
+		"scope": "source.chapel"
+
+	}
+	,
+	"if2":{
+		"prefix": "if",
+		"body": [
+			"if $1 then",	
+			"\t$2"
+			
+
+		],
+		"description": "If then statement",
+		"scope": "source.chapel"
+
+	}
+	,
+	"if3":{
+		"prefix": "if",
+		"body": [
+			"if ($1) {",	
+			"\t$2",
+			"}else{",
+			"\t$3",
+			"}"
+			
+		],
+		"description": "If  then else statement",
+		"scope": "source.chapel"
+
+	}
+	,
+	"select":{
+		"prefix": "select",
+		"body": [
+			"select($1) {",	
+			"when $2 { ",
+			"}\n otherwise {",
+			"\t$3",
+			"}"
+			
+		],
+		"description": "Select statement",
+		"scope": "source.chapel"
+
+	}
+	,
+	"while":{
+		"prefix": "while",
+		"body": [
+			"while ($1 $2) {",	
+			"\t $3",
+			"\t $1+=1;",
+			"}"
+			
+		],
+		"description": "While statement",
+		"scope": "source.chapel"
+
+	}
+	,
+	"dowhile":{
+		"prefix": "dowhile",
+		"body": [
+			"do{",	
+			"\t $3",
+			"\t $1+=1;",
+			"}while ($1$ $2);"
+			
+		],
+		"description": "Do while statement",
+		"scope": "source.chapel"
+
+	}
+	,
+
+	"range":{
+		"prefix": "range",
+		"body": [
+			"var $1 = $2..$3;"	
+			
+		],
+		"description": "Range Declaration ",
+		"scope": "source.chapel"
+
+	}
+	,
+	"range2":{
+		"prefix": "range",
+		"body": [
+			"var $1 = $2..$3 by $4;"
+		],
+		"description": "Range Declaration",
+		"scope": "source.chapel"
+	}
+	,
+	"domain":{
+		"prefix": "domain",
+		"body": [
+			"var $1:domain($2) = { $3 };"
+		],
+		"description": "Domain Declaration ",
+		"scope": "source.chapel"
+	}
+	,
+	"dict":{
+		"prefix": "dict",
+		"body": [
+			"var $1:domain(string);"
+		],
+		"description": "String HashMap/ Dictionary Declaration",
+		"scope": "source.chapel"
+	}
+	,
+	"array1":{
+		"prefix": "array1",
+		"body": [
+			"var $1:[$2] $3;"
+		],
+		"description": "Array Declaration ",
+		"scope": "source.chapel"
+	}
+	,
+	"array2":{
+		"prefix": "array2",
+		"body": [
+			"var $1:[{$2}] $3;"
+		],
+		"description": "Array Declaration",
+		"scope": "source.chapel"
+	}
+	
 }
